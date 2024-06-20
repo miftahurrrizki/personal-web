@@ -1,0 +1,294 @@
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+@import url('https://fonts.cdnfonts.com/css/inter');
+
+:root {
+    --primary-color: #131964;
+    --secondary-color: #F6F2EF;
+    --third-color: #C9CDFF;
+
+    --primary-font: 'Satoshi', sans-serif;
+    --secondary-font: 'Inter', sans-serif;
+
+    --primary-font-size: 24px;
+    --secondary-font-size: 32px;
+    --third-font-size: 64px;
+    --fourth-font-size: 40px;
+}
+
+html,
+body {
+    background-color: var(--primary-color);
+    font-family: var(--primary-font);
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: none;
+    /* color: var(--secondary-color); */
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--primary-font-size);
+    font-weight: medium;
+    align-items: center;
+    padding: 10px;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    z-index: 2000;
+}
+
+.menu a {
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: lighter;
+}
+
+.menu a:hover {
+    color: var(--third-color);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 60px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 16px;
+    border: 1.5px solid var(--secondary-color);
+    border-top: none;
+    border-radius: 0px 0px 10px 10px;
+    list-style: none;
+}
+
+.logo img {
+    transform: scale(0.5);
+}
+
+.home-container {
+    width: 100%;
+    height: 785px;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    margin-top: -90px;
+    color: var(--secondary-color);
+}
+
+.hello {
+    font-size: var(--fourth-font-size);
+    font-weight: medium;
+}
+
+.name {
+    font-size: var(--third-font-size);
+    font-weight: bold;
+    margin-top: -25px;
+}
+
+.desc {
+    font-size: var(--secondary-font-size);
+    font-weight: lighter;
+    margin-top: -25px;
+}
+
+.photo {
+    margin-top: 75px;
+    transform: scale(0.6);
+    animation-name: photo;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+    
+@keyframes photo {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.social img {
+    transform: scale(0.6);
+}
+
+.social button {
+    /* background-color: var(--third-color); */
+    border-color: 1.5px solid var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 10px;
+    font-size: var(--primary-font-size);
+    /* margin-left: 30px; */
+}
+
+.social button:hover {
+    background-color: var(--third-color);
+}
+
+/* END OF HOME-CONTAINER */
+
+.about-container {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--secondary-color);
+}
+
+.title1 {
+    display: block;
+    font-size: var(--third-font-size);
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.about-desc {
+    display: block;
+    /* background-color: var(--third-color); */
+    font-size: var(--primary-font-size);
+    font-weight: lighter;
+    margin-top: 5px;
+    margin-left: 65px;
+    margin-right: 65px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+/* END OF ABOUT-CONTAINER */
+
+.skills-container {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+
+.skills-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 50px;
+    
+}
+
+.skills-card p {
+    font-size: var(--secondary-font-size);
+    font-weight: medium;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.skills-card p:hover {
+    background-color: var(--third-color);
+    cursor: pointer;
+}
+
+/* END OF SKILLS-CONTAINER */
+
+.projects-container {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--secondary-color);
+}
+
+
+/* END OF PROJECTS-CONTAINER */
+
+.contact-container {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+
+.title2 {
+    display: block;
+    font-size: var(--third-font-size);
+    font-weight: bold;
+    margin-top: 100px;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.contact-desc {
+    display: block;
+    /* background-color: var(--third-color); */
+    font-size: var(--secondary-font-size);
+    font-weight: lighter;
+    margin-top: 5px;
+    margin-left: 65px;
+    margin-right: 65px;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.jado {
+    align-items: center;
+    background-color: var(--secondary-color);
+    /* height: 100vh;
+    width: 100%; */
+
+}
+
+.jado h1 {
+    display: block;
+    font-size: var(--third-font-size);
+    font-weight: bold;
+    margin-top: 100px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.kotak {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    height: 700px;
+    width: 700px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.kotak-dalem {
+    background-color: var(--secondary-color);
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    margin-top: 100px;
+}
