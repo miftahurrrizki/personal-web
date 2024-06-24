@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miftahur Rizki - Portfolio</title>
 
     <link rel="icon" href="./assets/favicon.png" type="image/x-icon">
-    
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./style/style.css">
 </head>
+
 <body>
     <nav bg-dark>
         <div class="logo">
@@ -27,7 +30,7 @@
     </nav>
 
     <!-- HOME-CONTAINER -->
-    <div id="home" class="home-container">
+    <section id="home" class="home-container">
         <div class="home-left">
             <div class="intro">
                 <p class="hello">Hello...</p>
@@ -36,9 +39,12 @@
             </div>
             <div class="social">
                 <div>
-                    <a href="https://github.com/miftahurrrizki" target="_blank"><img src="./assets/github.png" alt="github"></a>
-                    <a href="https://medium.com/miftahurrizki" target="_blank"><img src="./assets/medium.png" alt="medium"></a>
-                    <a href="https://www.linkedin.com/in/miftahurrrizki/" target="_blank"><img src="./assets/linkedin.png" alt="linkedin"></a>
+                    <a href="https://github.com/miftahurrrizki" target="_blank"><img src="./assets/github.png"
+                            alt="github"></a>
+                    <a href="https://medium.com/@dataisme.id" target="_blank"><img src="./assets/medium.png"
+                            alt="medium"></a>
+                    <a href="https://www.linkedin.com/in/miftahurrrizki/" target="_blank"><img
+                            src="./assets/linkedin.png" alt="linkedin"></a>
                 </div>
                 <div>
                     <button class="btn-resume">Download My Resume</button>
@@ -48,65 +54,164 @@
         <div class="home-right">
             <img class="photo" src="./assets/img1.png" alt="photo">
         </div>
-    </div>
+    </section>
 
     <!-- ABOUT-CONTAINER -->
-    <div id="about" class="about-container">
-        <div class="page-title">
-            <p class="title1">About Me</p>
-            <p class="about-desc">I am a data science student with a passion for data & design. I enjoy exploring data to get insight. I am a person who
-            is always eager to learn new skills, a fast learner, and I am open to new challenges and opportunities to improve my
+    <section id="about" class="about-container">
+
+        <p class="title1">About Me</p>
+        <p class="about-desc">I am a data science student with a passion for data & design. I enjoy exploring data to
+            get insight. I am a person who
+            is always eager to learn new skills, a fast learner, and I am open to new challenges and opportunities to
+            improve my
             skills.</p>
-        </div>
+
         <div class="about-left">
 
         </div>
         <div class="about-right">
-        
+
         </div>
-    </div>
+    </section>
     <!-- SKILLS-CONTAINER -->
     <div id="skills" class="skills-container">
-        <div class="skills-page-title">
-            <p class="title2">Skills</p>
-        </div>
+
+        <p class="title2">Skills</p>
+
+        <!-- <div class="skills-color">
+            <div class="data-analytics">
+                <p class="kotak1"></p>
+                <p>Data Analytics</p>
+            </div>
+            <div class="software-dev">
+                <p class="kotak2"></p>
+                <p>Software Development</p>
+            </div>
+            <div class="graphic-design">
+                <p class="kotak3"></p>
+                <p>Graphic Design</p>
+            </div>
+        </div> -->
         <div class="skills-card">
-            <p>Python</p>
-            <p>Java</p>
-            <p>Machine Learning</p>
-            <p>JavaScript</p>
-            <p>SQL</p>
-            <p>Tableau</p>
-            <p>BigQuery</p>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>Git</p>
-            <p>Cloud Computing</p>
-            <p>Looker Studio</p>
+            <p class="da">Python</p>
+            <p class="da">SQL</p>
+            <p class="da">Machine Learning</p>
+            <p class="da">Database Management</p>
+            <p class="da">Data Viz</p>
+            <p class="da">Cloud Computing</p>
+            <p class="da">Software Development</p>
+            <p class="da">Graphic Design</p>
         </div>
     </div>
 
 
     <!-- PROJECTS-CONTAINER -->
     <div id="projects" class="projects-container">
-        <div class="page-title">
-            <p class="title1">Projects</p>
+
+        <p class="title1">Projects</p>
+        <p class="projects-subtitle">Here are the projects that I have created. You can visit them and try them out in
+            person to see my work.</p>
+
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <p class="projects-title">The Richest</p>
+                    <p class="projects-desc">"The Richest" utilizes Tableau to visualize the impact of highest GDP
+                        values on global countries and
+                        associated influencing factors. This data analysis project offers insights crucial for economic
+                        planning,
+                        shedding light on the correlation between GDP and other indicators, contributing to informed
+                        policy
+                        decisions for global economic prosperity.
+                    </p>
+                    <div class="tech-used">
+                        <p>Tableau</p>
+                        <p>Python</p>
+                    </div>
+                    <button class="projects-button"
+                        href="https://public.tableau.com/app/profile/miftahurrrizki/viz/TheRichest/DASHBOARD"
+                        target="_blank">Visit Project</button>
+                </div>
+                <div class="swiper-slide">
+                    <p class="projects-title">Tweet Sentiment Analyzer</p>
+                    <p class="projects-desc">Developed a web application to analyze tweet sentiments using machine
+                        learning (Bernoulli NB
+                        and Logistic Regression). The project involved data collection, pre-processing, and model
+                        building with Python.
+                    </p>
+                    <div class="tech-used">
+                        <p>Bootstrap</p>
+                        <p>Azure ML Studio</p>
+                        <p>FastAPI</p>
+                        <p>Docker</p>
+                        <p>Scikit-learn</p>
+                    </div>
+                    <button class="projects-button"
+                        href="https://public.tableau.com/app/profile/miftahurrrizki/viz/TheRichest/DASHBOARD"
+                        target="_blank">Visit
+                        Project</button>
+                </div>
+                <div class="swiper-slide">
+                    <p class="projects-title">Dataisme</p>
+                    <p class="projects-desc">"Dataisme" is a data science and visualization initiative, delivering
+                        accessible insights via Instagram and
+                        Medium. Utilizing Tableau and Figma, we craft engaging data narratives, making complex
+                        information
+                        visually captivating for all audiences.
+                    </p>
+                    <div class="tech-used">
+                        <p>Python</p>
+                        <p>Looker Studio</p>
+                        <p>Figma</p>
+                        <p>Medium</p>
+                    </div>
+                    <button class="projects-button"
+                        href="https://public.tableau.com/app/profile/miftahurrrizki/viz/TheRichest/DASHBOARD"
+                        target="_blank">Visit
+                        Project</button>
+                </div>
+                <div class="swiper-slide">
+                    <p class="projects-title">Jurnal Kuliner</p>
+                    <p class="projects-desc">“Jurnal Kuliner” is a mobile app simplifying the search for top dining
+                        spots in Bandung, offering detailed
+                        information like menus, prices, locations, and reviews. With a focus on intuitive UI/UX design,
+                        the app
+                        ensures smooth navigation and clear information presentation for an engaging user experience.
+                    </p>
+                    <div class="tech-used">
+                        <p>UI/UX</p>
+                        <p>Figma</p>
+                    </div>
+                    <button class="projects-button"
+                        href="https://public.tableau.com/app/profile/miftahurrrizki/viz/TheRichest/DASHBOARD"
+                        target="_blank">Visit
+                        Project</button>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
 
     <div id="contact" class="contact-container">
 
-        <div class="contact-page-title">
-            <p class="title2">Contact Me</p>
-            <p class="contact-desc">Feel free to contact me if you have any questions or suggestions.</p>
-        </div>
+
+        <p class="title2">Contact Me</p>
+        <p class="contact-desc">Feel free to contact me if you have any questions or suggestions.</p>
+
 
     </div>
 
+    </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
 </body>
+
 </html>
