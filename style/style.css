@@ -197,7 +197,7 @@ nav {
     font-size: var(--primary-font-size);
     font-weight: lighter;
     width: 900px;
-    text-align: center;
+    text-align: justify;
     color: var(--primary-color);
 }
 
