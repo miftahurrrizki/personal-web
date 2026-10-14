@@ -4,26 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miftahur Rizki — Data Scientist & Visual Thinker</title>
+    <title>Miftahur Rizki — Data Scientist</title>
     <meta name="description"
-        content="Portfolio of Miftahur Rizki. Data Scientist exploring the intersection of data, technology, and visual storytelling.">
-    <meta property="og:title" content="Miftahur Rizki — Data Scientist & Visual Thinker">
-    <meta property="og:description" content="I turn data into things worth understanding.">
+        content="Data Scientist skilled in data analytics, machine learning, and computer vision. Portfolio of Miftahur Rizki.">
+    <meta property="og:title" content="Miftahur Rizki — Data Scientist">
+    <meta property="og:description"
+        content="Data Scientist skilled in data analytics, machine learning, and computer vision.">
     <meta property="og:type" content="website">
     <link rel="icon" href="./assets/favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
-    <!-- Navigation -->
     <nav class="nav" id="nav">
         <div class="nav__inner">
-            <a href="#" class="nav__logo">mr<span class="nav__logo-dot">.</span></a>
+            <a href="#" class="nav__logo">MR</a>
             <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
                 <span></span>
                 <span></span>
@@ -31,6 +30,7 @@
             <ul class="nav__menu" id="navMenu">
                 <li><a href="#projects" class="nav__link">Projects</a></li>
                 <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#experience" class="nav__link">Experience</a></li>
                 <li><a href="#skills" class="nav__link">Skills</a></li>
                 <li><a href="#contact" class="nav__link">Contact</a></li>
             </ul>
@@ -38,19 +38,47 @@
     </nav>
 
     <main>
-        <!-- Hero -->
         <section id="hero" class="hero">
             <div class="hero__inner">
-                <div class="hero__content" data-reveal>
-                    <span class="hero__label">Data Scientist & Visual Thinker</span>
-                    <h1 class="hero__title">I turn data into things worth <em>understanding.</em></h1>
-                    <p class="hero__subtitle">Exploring the intersection of data science, machine learning, and visual
-                        storytelling — from Bandung, Indonesia.</p>
-                    <div class="hero__actions">
-                        <a href="#projects" class="btn btn--primary">See my work</a>
-                        <a href="./assets/CV_Miftahur Rizki.pdf" class="btn btn--outline"
-                            download="CV_Miftahur Rizki.pdf">Download CV</a>
+                <div class="hero__profile" data-reveal>
+                    <div class="hero__avatar-wrap">
+                        <img src="./assets/img1.png" alt="Miftahur Rizki" class="hero__avatar" loading="eager">
                     </div>
+                    <div class="hero__info">
+                        <h1 class="hero__name">Miftahur Rizki</h1>
+                        <p class="hero__role">Data Scientist</p>
+                        <p class="hero__location">
+                            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            Bandung, Indonesia
+                        </p>
+                    </div>
+                </div>
+                <div class="hero__bio" data-reveal>
+                    <p>Data Scientist skilled in data analytics, machine learning, and computer vision. Experienced in
+                        transforming raw and multi-source data into reliable analysis, reports, dashboards, and
+                        actionable insights for business and operational decision-making.</p>
+                </div>
+                <div class="hero__stats" data-reveal>
+                    <div class="hero__stat">
+                        <span class="hero__stat-value">6+</span>
+                        <span class="hero__stat-label">Projects</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-value">5</span>
+                        <span class="hero__stat-label">Experiences</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-value">3.62</span>
+                        <span class="hero__stat-label">GPA</span>
+                    </div>
+                </div>
+                <div class="hero__actions" data-reveal>
+                    <a href="./assets/CV_Miftahur Rizki.pdf" class="btn btn--primary" download>Download CV</a>
+                    <a href="#contact" class="btn btn--ghost">Get in Touch</a>
                     <div class="hero__social">
                         <a href="https://github.com/miftahurrrizki" target="_blank" rel="noopener"
                             aria-label="GitHub">
@@ -74,388 +102,377 @@
                         </a>
                     </div>
                 </div>
-                <div class="hero__illustration" aria-hidden="true">
-                    <svg class="hero__svg" viewBox="0 0 600 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <ellipse cx="320" cy="260" rx="240" ry="190" fill="var(--color-sage)" opacity="0.08" />
-                        <ellipse cx="220" cy="200" rx="140" ry="110" fill="var(--color-terracotta)" opacity="0.06" />
-                        <path d="M 78,252 C 135,118 235,78 305,80 C 385,82 465,128 522,248"
-                            stroke="var(--color-terracotta)" stroke-width="2.5" stroke-linecap="round" fill="none" />
-                        <path d="M 78,252 C 128,378 235,422 308,420 C 388,418 468,372 522,248"
-                            stroke="var(--color-terracotta)" stroke-width="2.5" stroke-linecap="round" fill="none" />
-                        <circle cx="300" cy="252" r="92" stroke="var(--color-slate)" stroke-width="1.2"
-                            opacity="0.3" fill="none" />
-                        <circle cx="278" cy="222" r="5" fill="var(--color-sage)" opacity="0.8" />
-                        <circle cx="322" cy="238" r="3.5" fill="var(--color-gold)" opacity="0.9" />
-                        <circle cx="298" cy="275" r="7" fill="var(--color-terracotta)" opacity="0.5" />
-                        <circle cx="258" cy="262" r="4" fill="var(--color-slate)" opacity="0.6" />
-                        <circle cx="342" cy="222" r="3" fill="var(--color-sage)" opacity="0.7" />
-                        <circle cx="312" cy="292" r="5" fill="var(--color-gold)" opacity="0.6" />
-                        <circle cx="272" cy="238" r="2.5" fill="var(--color-terracotta)" opacity="0.7" />
-                        <circle cx="332" cy="268" r="6" fill="var(--color-sage)" opacity="0.5" />
-                        <circle cx="288" cy="212" r="3" fill="var(--color-slate)" opacity="0.6" />
-                        <circle cx="352" cy="252" r="4" fill="var(--color-terracotta)" opacity="0.4" />
-                        <circle cx="265" cy="282" r="2.5" fill="var(--color-gold)" opacity="0.7" />
-                        <circle cx="318" cy="228" r="4" fill="var(--color-sage)" opacity="0.6" />
-                        <circle cx="300" cy="252" r="20" fill="var(--color-text)" opacity="0.85" />
-                        <circle cx="307" cy="245" r="4.5" fill="var(--color-bg)" opacity="0.5" />
-                        <line x1="278" y1="222" x2="322" y2="238" stroke="var(--color-slate)" stroke-width="0.6"
-                            opacity="0.2" />
-                        <line x1="322" y1="238" x2="298" y2="275" stroke="var(--color-slate)" stroke-width="0.6"
-                            opacity="0.2" />
-                        <line x1="258" y1="262" x2="298" y2="275" stroke="var(--color-slate)" stroke-width="0.6"
-                            opacity="0.2" />
-                        <line x1="342" y1="222" x2="312" y2="292" stroke="var(--color-slate)" stroke-width="0.5"
-                            opacity="0.15" />
-                        <line x1="278" y1="222" x2="258" y2="262" stroke="var(--color-slate)" stroke-width="0.5"
-                            opacity="0.15" />
-                        <line x1="332" y1="268" x2="352" y2="252" stroke="var(--color-slate)" stroke-width="0.5"
-                            opacity="0.15" />
-                        <circle cx="118" cy="178" r="4" fill="var(--color-sage)" opacity="0.6" />
-                        <circle cx="158" cy="118" r="3" fill="var(--color-gold)" opacity="0.5" />
-                        <circle cx="482" cy="158" r="5" fill="var(--color-terracotta)" opacity="0.5" />
-                        <circle cx="525" cy="118" r="2.5" fill="var(--color-sage)" opacity="0.4" />
-                        <circle cx="452" cy="398" r="4" fill="var(--color-slate)" opacity="0.5" />
-                        <circle cx="148" cy="382" r="3" fill="var(--color-gold)" opacity="0.5" />
-                        <circle cx="98" cy="318" r="4.5" fill="var(--color-sage)" opacity="0.4" />
-                        <circle cx="502" cy="348" r="3" fill="var(--color-terracotta)" opacity="0.4" />
-                        <circle cx="68" cy="218" r="2.5" fill="var(--color-slate)" opacity="0.3" />
-                        <circle cx="548" cy="282" r="3" fill="var(--color-gold)" opacity="0.35" />
-                        <line x1="78" y1="252" x2="118" y2="178" stroke="var(--color-slate)" stroke-width="0.7"
-                            opacity="0.15" />
-                        <line x1="118" y1="178" x2="158" y2="118" stroke="var(--color-slate)" stroke-width="0.5"
-                            opacity="0.1" />
-                        <line x1="522" y1="248" x2="482" y2="158" stroke="var(--color-slate)" stroke-width="0.7"
-                            opacity="0.15" />
-                        <line x1="482" y1="158" x2="525" y2="118" stroke="var(--color-slate)" stroke-width="0.5"
-                            opacity="0.1" />
-                        <line x1="78" y1="252" x2="98" y2="318" stroke="var(--color-slate)" stroke-width="0.5"
-                            opacity="0.12" />
-                        <line x1="98" y1="318" x2="148" y2="382" stroke="var(--color-slate)" stroke-width="0.5"
-                            opacity="0.1" />
-                        <line x1="522" y1="248" x2="502" y2="348" stroke="var(--color-slate)" stroke-width="0.5"
-                            opacity="0.12" />
-                        <line x1="502" y1="348" x2="452" y2="398" stroke="var(--color-slate)" stroke-width="0.5"
-                            opacity="0.1" />
-                        <line x1="68" y1="218" x2="118" y2="178" stroke="var(--color-slate)" stroke-width="0.4"
-                            opacity="0.1" />
-                        <line x1="525" y1="118" x2="548" y2="282" stroke="var(--color-slate)" stroke-width="0.4"
-                            opacity="0.08" />
-                        <text x="128" y="170" class="svg-label">x&#x2081;</text>
-                        <text x="492" y="152" class="svg-label">&#x03BC;</text>
-                        <text x="458" y="412" class="svg-label">&#x03C3;&#xB2;</text>
-                        <text x="58" y="310" class="svg-label">&#x2202;f</text>
-                        <text x="535" y="130" class="svg-label">&#x03BB;</text>
-                        <circle cx="300" cy="252" r="92" stroke="var(--color-terracotta)" stroke-width="0.4"
-                            opacity="0.15" stroke-dasharray="4 6" fill="none" class="hero__orbit" />
-                    </svg>
-                </div>
             </div>
         </section>
 
-        <!-- Projects -->
         <section id="projects" class="projects">
             <div class="section__inner">
-                <header class="section__header" data-reveal>
-                    <span class="section__label">Selected Work</span>
-                    <h2 class="section__title">Projects</h2>
-                    <p class="section__subtitle">From data visualization and machine learning to product design — here's
-                        what I've been building.</p>
-                </header>
+                <h2 class="section__heading" data-reveal>Projects</h2>
                 <div class="projects__grid">
-                    <article class="project" data-accent="terracotta" data-reveal>
-                        <div class="project__meta">
-                            <span class="project__number">01</span>
-                            <div class="project__tags">
+                    <a href="https://public.tableau.com/app/profile/miftahurrrizki/viz/TheRichest/DASHBOARD"
+                        class="project-card" target="_blank" rel="noopener" data-reveal>
+                        <div class="project-card__cover" style="--cover-accent: #4A6CF7;">
+                            <div class="project-card__cover-content">
+                                <svg viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" opacity="0.4">
+                                    <rect x="6" y="22" width="8" height="20" rx="1" />
+                                    <rect x="20" y="12" width="8" height="30" rx="1" />
+                                    <rect x="34" y="6" width="8" height="36" rx="1" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-card__info">
+                            <h3 class="project-card__title">The Richest</h3>
+                            <p class="project-card__desc">Interactive Tableau dashboard exploring the impact of highest
+                                GDP values on global countries and associated influencing factors.</p>
+                            <div class="project-card__tags">
                                 <span>Tableau</span>
                                 <span>Python</span>
                             </div>
                         </div>
-                        <h3 class="project__title">The Richest</h3>
-                        <p class="project__desc">Visualizing the impact of highest GDP values on global countries and
-                            associated influencing factors. Interactive Tableau dashboard exploring economic data and the
-                            correlation between GDP and other indicators for informed policy insights.</p>
-                        <a href="https://public.tableau.com/app/profile/miftahurrrizki/viz/TheRichest/DASHBOARD"
-                            class="project__link" target="_blank" rel="noopener">
-                            Visit Project
-                            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M7 17L17 7M17 7H7M17 7V17" />
-                            </svg>
-                        </a>
-                    </article>
+                    </a>
 
-                    <article class="project" data-accent="sage" data-reveal>
-                        <div class="project__meta">
-                            <span class="project__number">02</span>
-                            <div class="project__tags">
+                    <a href="https://sentiment-analyzer-tweet.vercel.app/" class="project-card" target="_blank"
+                        rel="noopener" data-reveal>
+                        <div class="project-card__cover" style="--cover-accent: #34D399;">
+                            <div class="project-card__cover-content">
+                                <svg viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" opacity="0.4">
+                                    <path d="M4 24c4-8 12-16 20-8s16 0 20-8" />
+                                    <path d="M4 32c4-8 12-16 20-8s16 0 20-8" />
+                                    <circle cx="24" cy="16" r="3" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-card__info">
+                            <h3 class="project-card__title">Tweet Sentiment Analyzer</h3>
+                            <p class="project-card__desc">Web app analyzing tweet sentiments using Bernoulli Naive
+                                Bayes and Logistic Regression with FastAPI serving.</p>
+                            <div class="project-card__tags">
                                 <span>FastAPI</span>
                                 <span>Scikit-learn</span>
                                 <span>Azure</span>
-                                <span>JavaScript</span>
                             </div>
                         </div>
-                        <h3 class="project__title">Tweet Sentiment Analyzer</h3>
-                        <p class="project__desc">Web application analyzing tweet sentiments using machine learning.
-                            Built with Bernoulli Naive Bayes and Logistic Regression, featuring data collection,
-                            pre-processing pipeline, and model serving via FastAPI.</p>
-                        <a href="https://sentiment-analyzer-tweet.vercel.app/" class="project__link" target="_blank"
-                            rel="noopener">
-                            Visit Project
-                            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M7 17L17 7M17 7H7M17 7V17" />
-                            </svg>
-                        </a>
-                    </article>
+                    </a>
 
-                    <article class="project project--wide" data-accent="gold" data-reveal>
-                        <div class="project__meta">
-                            <span class="project__number">03</span>
-                            <div class="project__tags">
+                    <a href="https://www.instagram.com/dataisme.id/" class="project-card" target="_blank"
+                        rel="noopener" data-reveal>
+                        <div class="project-card__cover" style="--cover-accent: #F59E0B;">
+                            <div class="project-card__cover-content">
+                                <svg viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" opacity="0.4">
+                                    <circle cx="24" cy="24" r="18" />
+                                    <path d="M24 6v36M6 24h36" />
+                                    <path d="M12 12l24 24M36 12L12 36" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-card__info">
+                            <h3 class="project-card__title">Dataisme</h3>
+                            <p class="project-card__desc">Data science and visualization initiative delivering
+                                accessible insights via Instagram and Medium.</p>
+                            <div class="project-card__tags">
                                 <span>Python</span>
                                 <span>Looker Studio</span>
                                 <span>Figma</span>
-                                <span>Medium</span>
                             </div>
                         </div>
-                        <h3 class="project__title">Dataisme</h3>
-                        <p class="project__desc">A data science and visualization initiative delivering accessible
-                            insights via Instagram and Medium. Crafting engaging data narratives using Tableau and Figma,
-                            making complex information visually captivating for all audiences.</p>
-                        <a href="https://www.instagram.com/dataisme.id/" class="project__link" target="_blank"
-                            rel="noopener">
-                            Visit Project
-                            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M7 17L17 7M17 7H7M17 7V17" />
-                            </svg>
-                        </a>
-                    </article>
+                    </a>
 
-                    <article class="project" data-accent="slate" data-reveal>
-                        <div class="project__meta">
-                            <span class="project__number">04</span>
-                            <div class="project__tags">
+                    <a href="https://www.canva.com/design/DAGHvivsbQ8/rmfQnTvt2h0x5pgfYPSYrw/edit"
+                        class="project-card" target="_blank" rel="noopener" data-reveal>
+                        <div class="project-card__cover" style="--cover-accent: #8B5CF6;">
+                            <div class="project-card__cover-content">
+                                <svg viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" opacity="0.4">
+                                    <rect x="4" y="8" width="40" height="32" rx="2" />
+                                    <path d="M4 16h40" />
+                                    <path d="M16 16v24" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-card__info">
+                            <h3 class="project-card__title">Superstore Dashboard</h3>
+                            <p class="project-card__desc">Web-based data visualization dashboard monitoring sales
+                                performance and business operations of a retail chain.</p>
+                            <div class="project-card__tags">
                                 <span>JavaScript</span>
                                 <span>Looker Studio</span>
                                 <span>BigQuery</span>
                             </div>
                         </div>
-                        <h3 class="project__title">Superstore Dashboard</h3>
-                        <p class="project__desc">Web-based data visualization dashboard monitoring and analyzing sales
-                            performance and business operations of a retail chain. Real-time metrics and interactive
-                            filtering for business intelligence.</p>
-                        <a href="https://www.canva.com/design/DAGHvivsbQ8/rmfQnTvt2h0x5pgfYPSYrw/edit" class="project__link"
-                            target="_blank" rel="noopener">
-                            Visit Project
-                            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M7 17L17 7M17 7H7M17 7V17" />
-                            </svg>
-                        </a>
-                    </article>
+                    </a>
 
-                    <article class="project" data-accent="terracotta" data-reveal>
-                        <div class="project__meta">
-                            <span class="project__number">05</span>
-                            <div class="project__tags">
+                    <a href="https://drive.google.com/file/d/1t1Z0HjjVJ7jJrBsvOs9Zb287hwgxu5sz/view?usp=sharing"
+                        class="project-card" target="_blank" rel="noopener" data-reveal>
+                        <div class="project-card__cover" style="--cover-accent: #EC4899;">
+                            <div class="project-card__cover-content">
+                                <svg viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" opacity="0.4">
+                                    <path d="M8 8h32v32H8z" />
+                                    <path d="M14 18h20M14 24h20M14 30h12" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-card__info">
+                            <h3 class="project-card__title">CatetIn</h3>
+                            <p class="project-card__desc">Note-taking application built with Java GUI implementing
+                                Model-View-Controller architecture with MySQL storage.</p>
+                            <div class="project-card__tags">
                                 <span>Java</span>
                                 <span>MySQL</span>
                                 <span>Figma</span>
                             </div>
                         </div>
-                        <h3 class="project__title">CatetIn</h3>
-                        <p class="project__desc">A note-taking application built with Java GUI implementing
-                            Model-View-Controller architecture. Features persistent storage with MySQL database for
-                            reliable data management.</p>
-                        <a href="https://drive.google.com/file/d/1t1Z0HjjVJ7jJrBsvOs9Zb287hwgxu5sz/view?usp=sharing"
-                            class="project__link" target="_blank" rel="noopener">
-                            Visit Project
-                            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M7 17L17 7M17 7H7M17 7V17" />
-                            </svg>
-                        </a>
-                    </article>
+                    </a>
 
-                    <article class="project" data-accent="sage" data-reveal>
-                        <div class="project__meta">
-                            <span class="project__number">06</span>
-                            <div class="project__tags">
+                    <a href="https://www.figma.com/proto/Ck6tuAr8Sflk9HuSaIUmDG/Sendiri?page-id=0%3A1&type=design&node-id=311-49&viewport=730%2C190%2C0.02&t=eu0bbAhxtkUxtVxA-1&scaling=scale-down&starting-point-node-id=311%3A49"
+                        class="project-card" target="_blank" rel="noopener" data-reveal>
+                        <div class="project-card__cover" style="--cover-accent: #06B6D4;">
+                            <div class="project-card__cover-content">
+                                <svg viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" opacity="0.4">
+                                    <rect x="10" y="4" width="28" height="40" rx="4" />
+                                    <circle cx="24" cy="38" r="2" />
+                                    <path d="M18 12h12M18 18h8" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-card__info">
+                            <h3 class="project-card__title">Jurnal Kuliner</h3>
+                            <p class="project-card__desc">Mobile app simplifying the search for top dining spots in
+                                Bandung with intuitive UI/UX design.</p>
+                            <div class="project-card__tags">
                                 <span>UI/UX</span>
                                 <span>Figma</span>
                             </div>
                         </div>
-                        <h3 class="project__title">Jurnal Kuliner</h3>
-                        <p class="project__desc">Mobile app simplifying the search for top dining spots in Bandung.
-                            Designed with intuitive UI/UX offering detailed menus, prices, locations, and reviews with
-                            smooth navigation and clear information hierarchy.</p>
-                        <a href="https://www.figma.com/proto/Ck6tuAr8Sflk9HuSaIUmDG/Sendiri?page-id=0%3A1&type=design&node-id=311-49&viewport=730%2C190%2C0.02&t=eu0bbAhxtkUxtVxA-1&scaling=scale-down&starting-point-node-id=311%3A49"
-                            class="project__link" target="_blank" rel="noopener">
-                            Visit Project
-                            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M7 17L17 7M17 7H7M17 7V17" />
-                            </svg>
-                        </a>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="section__inner">
+                <h2 class="section__heading" data-reveal>About</h2>
+                <div class="about__grid">
+                    <div class="about__content" data-reveal>
+                        <p class="about__lead">Data Scientist skilled in data analytics, machine learning, and computer
+                            vision. Experienced in transforming raw and multi-source data into reliable analysis,
+                            reports, dashboards, and actionable insights for business and operational
+                            decision-making.</p>
+                        <p class="about__text">Comfortable working with cross-functional teams to understand business
+                            problems, communicate findings clearly, and support data-driven decisions.</p>
+                    </div>
+                    <div class="about__details" data-reveal>
+                        <div class="about__detail">
+                            <span class="about__detail-label">Education</span>
+                            <p class="about__detail-value">Bachelor of Data Science<br>Telkom University — GPA
+                                3.62/4.0</p>
+                        </div>
+                        <div class="about__detail">
+                            <span class="about__detail-label">Certification</span>
+                            <p class="about__detail-value">Data Analytics & Software Development<br>RevoU Tech Academy
+                                — Grade 98/100</p>
+                        </div>
+                        <div class="about__detail">
+                            <span class="about__detail-label">Achievement</span>
+                            <p class="about__detail-value">Author & Presenter — iSemantic 2025<br>IEEE Xplore research
+                                paper on YOLO helmet detection</p>
+                        </div>
+                        <div class="about__detail">
+                            <span class="about__detail-label">Achievement</span>
+                            <p class="about__detail-value">Top 4 Finalist — National Infographic Competition
+                                2024<br>Dataquest, Universitas Airlangga</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <div class="section__inner">
+                <h2 class="section__heading" data-reveal>Experience</h2>
+                <div class="experience__list">
+                    <article class="exp-card" data-reveal>
+                        <div class="exp-card__left">
+                            <span class="exp-card__period">Oct 2025 — Present</span>
+                        </div>
+                        <div class="exp-card__right">
+                            <h3 class="exp-card__role">Data Scientist</h3>
+                            <span class="exp-card__org">Transjakarta</span>
+                            <ul class="exp-card__points">
+                                <li>Extracted, cleaned, transformed, and analyzed large-scale operational,
+                                    transactional, and ERP data using SQL and Python.</li>
+                                <li>Developed interactive dashboards and KPI reports to monitor audit follow-up across
+                                    30+ departments.</li>
+                                <li>Built automated data processing workflows to reduce manual reporting.</li>
+                                <li>Developed an internal semantic search solution for company regulations and internal
+                                    documents.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="exp-card" data-reveal>
+                        <div class="exp-card__left">
+                            <span class="exp-card__period">Mar 2025 — Aug 2025</span>
+                        </div>
+                        <div class="exp-card__right">
+                            <h3 class="exp-card__role">Data Analyst</h3>
+                            <span class="exp-card__org">Midblock — Internship</span>
+                            <ul class="exp-card__points">
+                                <li>Built ETL pipelines to collect and transform football data from APIs into BigQuery.
+                                </li>
+                                <li>Conducted player and team performance analysis using Python and SQL.</li>
+                                <li>Developed data visualizations and scouting reports for business and football
+                                    stakeholders.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="exp-card" data-reveal>
+                        <div class="exp-card__left">
+                            <span class="exp-card__period">Sep 2024 — Jun 2025</span>
+                        </div>
+                        <div class="exp-card__right">
+                            <h3 class="exp-card__role">Member</h3>
+                            <span class="exp-card__org">Big Data Laboratory, Telkom University</span>
+                            <ul class="exp-card__points">
+                                <li>Studied data processing, database, and AI technologies through practical projects.
+                                </li>
+                                <li>Contributed to the development of an AI-powered chatbot for a money changer
+                                    business.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="exp-card" data-reveal>
+                        <div class="exp-card__left">
+                            <span class="exp-card__period">Jul 2024 — Sep 2024</span>
+                        </div>
+                        <div class="exp-card__right">
+                            <h3 class="exp-card__role">Data Scientist Researcher</h3>
+                            <span class="exp-card__org">BRIN RI — Internship</span>
+                            <ul class="exp-card__points">
+                                <li>Collected, cleaned, and organized research datasets from journal publications for
+                                    NLP research.</li>
+                                <li>Developed Python-based tools for data collection, preprocessing, and dataset
+                                    management.</li>
+                                <li>Applied NLP techniques to structure and analyze unstructured research data.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="exp-card" data-reveal>
+                        <div class="exp-card__left">
+                            <span class="exp-card__period">May 2023 — Jun 2024</span>
+                        </div>
+                        <div class="exp-card__right">
+                            <h3 class="exp-card__role">Mentor & Staff</h3>
+                            <span class="exp-card__org">HIMA Data Science, Telkom University</span>
+                            <ul class="exp-card__points">
+                                <li>Taught data visualization concepts and practical techniques to undergraduate
+                                    students.</li>
+                                <li>Created data-driven visual content and communication materials for organizational
+                                    social media.</li>
+                            </ul>
+                        </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- About -->
-        <section id="about" class="about">
-            <div class="section__inner">
-                <div class="about__grid">
-                    <div class="about__photo-wrap" data-reveal>
-                        <img src="./assets/img1.png" alt="Miftahur Rizki" class="about__photo" loading="lazy">
-                        <svg class="about__deco" viewBox="0 0 120 120" fill="none" aria-hidden="true">
-                            <circle cx="20" cy="30" r="3" fill="var(--color-terracotta)" opacity="0.5" />
-                            <circle cx="80" cy="15" r="2" fill="var(--color-sage)" opacity="0.6" />
-                            <circle cx="100" cy="60" r="4" fill="var(--color-gold)" opacity="0.4" />
-                            <circle cx="40" cy="100" r="2.5" fill="var(--color-slate)" opacity="0.5" />
-                            <circle cx="110" cy="95" r="2" fill="var(--color-terracotta)" opacity="0.3" />
-                            <line x1="20" y1="30" x2="80" y2="15" stroke="var(--color-slate)" stroke-width="0.5"
-                                opacity="0.15" />
-                            <line x1="80" y1="15" x2="100" y2="60" stroke="var(--color-slate)" stroke-width="0.5"
-                                opacity="0.15" />
-                            <line x1="100" y1="60" x2="110" y2="95" stroke="var(--color-slate)" stroke-width="0.5"
-                                opacity="0.12" />
-                        </svg>
-                    </div>
-                    <div class="about__content" data-reveal>
-                        <span class="section__label">About Me</span>
-                        <h2 class="section__title">The story so far</h2>
-                        <p class="about__text">I'm a Data Science student at Telkom University who believes the best
-                            insights come from the intersection of analytical thinking and visual storytelling.</p>
-                        <p class="about__text">With experience in Python, SQL, and machine learning, I go beyond
-                            analysis and interpretation — I communicate findings through engaging, comprehensible visual
-                            designs. Always eager to learn, always looking for the next challenge.</p>
-                    </div>
-                </div>
-
-                <div class="experience" data-reveal>
-                    <h3 class="experience__title">Experience</h3>
-                    <div class="experience__list">
-                        <div class="experience__item">
-                            <div class="experience__left">
-                                <span class="experience__period">Mar — Jun 2024</span>
-                            </div>
-                            <div class="experience__right">
-                                <h4 class="experience__role">Mentor Data Visualization</h4>
-                                <span class="experience__org">HIMA Data Science</span>
-                                <p class="experience__desc">Teaching data visualization course to fourth-semester
-                                    students majoring in data science. Assisted students with completing major
-                                    assignments.</p>
-                            </div>
-                        </div>
-                        <div class="experience__item">
-                            <div class="experience__left">
-                                <span class="experience__period">May 2023 — Jan 2024</span>
-                            </div>
-                            <div class="experience__right">
-                                <h4 class="experience__role">Staff of Communication & Information</h4>
-                                <span class="experience__org">HIMA Data Science</span>
-                                <p class="experience__desc">Crafted compelling Instagram content to convey
-                                    organizational messages. Designed Study Group Data Science materials.</p>
-                            </div>
-                        </div>
-                        <div class="experience__item">
-                            <div class="experience__left">
-                                <span class="experience__period">Feb 2022 — Feb 2023</span>
-                            </div>
-                            <div class="experience__right">
-                                <h4 class="experience__role">Staff of Creative Media</h4>
-                                <span class="experience__org">Al-Fath Telkom University</span>
-                                <p class="experience__desc">Crafted compelling Instagram content. Ensured visually
-                                    striking graphics for lasting audience impact.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills -->
         <section id="skills" class="skills">
             <div class="section__inner">
-                <header class="section__header" data-reveal>
-                    <span class="section__label">Capabilities</span>
-                    <h2 class="section__title">Skills & Tools</h2>
-                </header>
+                <h2 class="section__heading" data-reveal>Skills & Tools</h2>
                 <div class="skills__grid">
                     <div class="skills__group" data-reveal>
-                        <h3 class="skills__category">Data & Machine Learning</h3>
+                        <h3 class="skills__category">Data Analysis</h3>
                         <div class="skills__tags">
-                            <span class="skill-tag" data-color="terracotta">Python</span>
-                            <span class="skill-tag" data-color="terracotta">SQL</span>
-                            <span class="skill-tag" data-color="terracotta">Machine Learning</span>
-                            <span class="skill-tag" data-color="terracotta">Computer Vision</span>
-                            <span class="skill-tag" data-color="terracotta">Natural Language Processing</span>
+                            <span>SQL</span>
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>NumPy</span>
+                            <span>Statistical Analysis</span>
+                            <span>EDA</span>
+                            <span>Data Wrangling</span>
+                            <span>Feature Engineering</span>
                         </div>
                     </div>
                     <div class="skills__group" data-reveal>
-                        <h3 class="skills__category">Engineering & Infrastructure</h3>
+                        <h3 class="skills__category">Machine Learning</h3>
                         <div class="skills__tags">
-                            <span class="skill-tag" data-color="sage">Database Management</span>
-                            <span class="skill-tag" data-color="sage">Data Warehousing</span>
-                            <span class="skill-tag" data-color="sage">Cloud Computing</span>
-                            <span class="skill-tag" data-color="sage">Software Development</span>
+                            <span>Scikit-learn</span>
+                            <span>Computer Vision</span>
+                            <span>NLP</span>
+                            <span>YOLO</span>
+                        </div>
+                    </div>
+                    <div class="skills__group" data-reveal>
+                        <h3 class="skills__category">Data Engineering & Cloud</h3>
+                        <div class="skills__tags">
+                            <span>ETL</span>
+                            <span>MySQL</span>
+                            <span>BigQuery</span>
+                            <span>Google Cloud Platform</span>
+                            <span>Microsoft Azure</span>
+                        </div>
+                    </div>
+                    <div class="skills__group" data-reveal>
+                        <h3 class="skills__category">Visualization & BI</h3>
+                        <div class="skills__tags">
+                            <span>Tableau</span>
+                            <span>Looker Studio</span>
+                            <span>Matplotlib</span>
+                            <span>Plotly</span>
+                            <span>Streamlit</span>
+                            <span>KPI Reporting</span>
                         </div>
                     </div>
                     <div class="skills__group" data-reveal>
                         <h3 class="skills__category">Design & Communication</h3>
                         <div class="skills__tags">
-                            <span class="skill-tag" data-color="gold">Data Visualization</span>
-                            <span class="skill-tag" data-color="gold">Graphic Design</span>
-                            <span class="skill-tag" data-color="gold">UI/UX Design</span>
+                            <span>Data Storytelling</span>
+                            <span>UI/UX Design</span>
+                            <span>Graphic Design</span>
+                            <span>Figma</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact -->
         <section id="contact" class="contact">
             <div class="section__inner">
                 <div class="contact__content" data-reveal>
-                    <span class="section__label">Get in Touch</span>
-                    <h2 class="contact__title">Got a question, project idea, or just want to connect?</h2>
-                    <p class="contact__subtitle">I'm always open to new opportunities, collaborations, and
-                        conversations about data, design, and everything in between.</p>
+                    <h2 class="section__heading">Get in Touch</h2>
+                    <p class="contact__text">Open to new opportunities, collaborations, and conversations about data,
+                        design, and everything in between.</p>
                     <div class="contact__links">
                         <a href="https://www.linkedin.com/in/miftahurrrizki/" target="_blank" rel="noopener"
-                            class="contact__card">
-                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            class="contact__link">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
                                 <path
                                     d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                             </svg>
-                            <div>
-                                <span class="contact__card-label">LinkedIn</span>
-                                <span class="contact__card-handle">miftahurrrizki</span>
-                            </div>
+                            LinkedIn
                         </a>
                         <a href="https://github.com/miftahurrrizki" target="_blank" rel="noopener"
-                            class="contact__card">
-                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            class="contact__link">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
                                 <path
                                     d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
                             </svg>
-                            <div>
-                                <span class="contact__card-label">GitHub</span>
-                                <span class="contact__card-handle">miftahurrrizki</span>
-                            </div>
+                            GitHub
                         </a>
                         <a href="https://medium.com/@dataisme.id" target="_blank" rel="noopener"
-                            class="contact__card">
-                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            class="contact__link">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
                                 <path
                                     d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" />
                             </svg>
-                            <div>
-                                <span class="contact__card-label">Medium</span>
-                                <span class="contact__card-handle">@dataisme.id</span>
-                            </div>
+                            Medium
                         </a>
                     </div>
                 </div>
@@ -463,32 +480,9 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="footer__inner">
-            <a href="#" class="footer__logo">mr<span class="nav__logo-dot">.</span></a>
-            <p class="footer__copy">&copy; 2024 Miftahur Rizki. All rights reserved.</p>
-            <div class="footer__links">
-                <a href="https://github.com/miftahurrrizki" target="_blank" rel="noopener" aria-label="GitHub">
-                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                        <path
-                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-                    </svg>
-                </a>
-                <a href="https://www.linkedin.com/in/miftahurrrizki/" target="_blank" rel="noopener"
-                    aria-label="LinkedIn">
-                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                        <path
-                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                    </svg>
-                </a>
-                <a href="https://medium.com/@dataisme.id" target="_blank" rel="noopener" aria-label="Medium">
-                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                        <path
-                            d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" />
-                    </svg>
-                </a>
-            </div>
+            <span class="footer__copy">&copy; 2024 Miftahur Rizki</span>
         </div>
     </footer>
 
